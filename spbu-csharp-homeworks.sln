@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework1.task2", "homework1.task2\homework1.task2.csproj", "{3B406EAE-2E4A-4998-B303-0386B6FB05D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework1.Task2", "Homework1.Task2\Homework1.Task2.csproj", "{3B406EAE-2E4A-4998-B303-0386B6FB05D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework1.task1", "homework1.task1\homework1.task1.csproj", "{FE18650C-FEA7-4B6E-843D-0843EFD0D7CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework1.Task1", "Homework1.Task1\Homework1.Task1.csproj", "{FE18650C-FEA7-4B6E-843D-0843EFD0D7CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework1.task1.tests", "homework1.task1.tests\homework1.task1.tests.csproj", "{52DC653C-30C8-4092-AE75-3C30C570C3A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework1.Task1.Tests", "Homework1.Task1.Tests\Homework1.Task1.Tests.csproj", "{52DC653C-30C8-4092-AE75-3C30C570C3A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework1.task2.tests", "homework1.task2.tests\homework1.task2.tests.csproj", "{B4DF8D90-9AB1-4BBB-B5E0-9FAA436480DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework1.Task2.Tests", "Homework1.Task2.Tests\Homework1.Task2.Tests.csproj", "{B4DF8D90-9AB1-4BBB-B5E0-9FAA436480DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
