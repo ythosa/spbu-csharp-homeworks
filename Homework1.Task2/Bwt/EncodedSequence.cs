@@ -11,11 +11,6 @@ public readonly struct EncodedSequence
         EofIndex = eofIndex;
     }
 
-    public string WithEof(char eofRune = '$')
-    {
-        return TransformedSequence[..EofIndex] + eofRune + TransformedSequence[EofIndex..];
-    }
-
     public override string ToString()
     {
         return $"{TransformedSequence} {EofIndex}";

@@ -4,17 +4,14 @@ internal static class Example
 {
     static void Main()
     {
-        const string sequence = "ABACABA";
+        const string sequence = "mississippi";
         Console.WriteLine($"Sequence: {sequence}");
 
         var encodedSequence = new Bwt.Encoder(sequence).Encode();
-        Console.WriteLine($"Encoded: {encodedSequence.TransformedSequence}"); // ipssmpissii
-        Console.WriteLine($"EOF index: {encodedSequence.EofIndex}"); // 5
-        Console.WriteLine($"With EOF: {encodedSequence.WithEof()}"); // amnnn$lcpmnapaaaaaaala
+        Console.WriteLine($"Encoded: {encodedSequence.TransformedSequence}"); // pssmipissii
+        Console.WriteLine($"EOF index: {encodedSequence.EofIndex}"); // 4
 
         var decodedSequence = new Bwt.Decoder(encodedSequence).Decode();
-        Console.WriteLine($"Decoded: {decodedSequence}"); // amanaplanacanalpanama
-
-        Console.WriteLine(decodedSequence == sequence);
+        Console.WriteLine($"Decoded: {decodedSequence}"); // mississippi
     }
 }
