@@ -14,9 +14,9 @@ public class BubbleSortedTests
     [TestCase(new[] { 2, 3, 5, 4, 1 }, TestName = "disordered")]
     public void Test(int[] elements)
     {
-        Assert.AreEqual(
-            elements.OrderBy(element => element).ToArray(),
-            new BubbleSorted<int>(elements).ToArray()
+        Assert.That(
+            new BubbleSorted<int>(elements).ToArray(),
+            Is.EqualTo(elements.OrderBy(element => element).ToArray())
         );
     }
 }

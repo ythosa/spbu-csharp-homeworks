@@ -17,13 +17,13 @@ public class ThreadSafeLazy
     [Repeat(20)]
     public void GetSuccessTest<T>(ILazy<T> lazy, T expected)
     {
-        Task<T?>[] tasks = Enumerable.Range(0, 20).Select(_ => Task<T>.Factory.StartNew(() => lazy.Get())).ToArray();
+        var tasks = Enumerable.Range(0, 20).Select(_ => Task<T?>.Factory.StartNew(lazy.Get)).ToArray();
 
         foreach (var task in tasks)
         {
-            Assert.AreEqual(expected, task.Result);
-            Assert.AreEqual(expected, task.Result);
-            Assert.AreEqual(expected, task.Result);
+            Assert.That(task.Result, Is.EqualTo(expected));
+            Assert.That(task.Result, Is.EqualTo(expected));
+            Assert.That(task.Result, Is.EqualTo(expected));
         }
     }
 

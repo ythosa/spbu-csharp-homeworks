@@ -16,9 +16,9 @@ public class UnsafeLazy
     [TestCaseSource(nameof(_getSuccessCases))]
     public void GetSuccessTest<T>(ILazy<T> lazy, T expected)
     {
-        Assert.AreEqual(expected, lazy.Get());
-        Assert.AreEqual(expected, lazy.Get());
-        Assert.AreEqual(expected, lazy.Get());
+        Assert.That(lazy.Get(), Is.EqualTo(expected));
+        Assert.That(lazy.Get(), Is.EqualTo(expected));
+        Assert.That(lazy.Get(), Is.EqualTo(expected));
     }
 
     private static object[] _getExceptionCases =
