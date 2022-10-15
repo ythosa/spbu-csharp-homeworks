@@ -1,6 +1,6 @@
 using Homework1.Task2.Bwt;
 
-namespace homework1.task2.tests.Bwt;
+namespace Homework1.Task2.Tests.Bwt;
 
 public class DecoderTests
 {
