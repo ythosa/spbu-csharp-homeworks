@@ -16,6 +16,6 @@ public class EncoderTests
     [TestCaseSource(nameof(_encodeCases))]
     public void EncodeTest(string sequence, EncodedSequence expected)
     {
-        Assert.AreEqual(expected, new Encoder(sequence).Encode());
+        Assert.That(new Encoder(sequence).Encode(), Is.EqualTo(expected));
     }
 }

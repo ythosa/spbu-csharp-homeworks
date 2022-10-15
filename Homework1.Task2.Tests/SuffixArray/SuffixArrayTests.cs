@@ -10,6 +10,6 @@ public class SuffixArrayTests
     [TestCase("ihatecsharp", new[] { 8, 2, 5, 4, 7, 1, 0, 10, 9, 6, 3 }, TestName = "random string")]
     public void Test(string sequence, int[] expected)
     {
-        Assert.AreEqual(expected, new SuffixArray(sequence).ToArray());
+        Assert.That(new SuffixArray(sequence).ToArray(), Is.EqualTo(expected));
     }
 }
