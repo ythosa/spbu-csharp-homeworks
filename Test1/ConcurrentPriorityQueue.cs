@@ -24,7 +24,7 @@ public class ConcurrentPriorityQueue<TP, TV> : IConcurrentPriorityQueue<TP, TV> 
             _elementsByPriority[priority].Add(value);
             _elementsCount++;
 
-            Monitor.PulseAll(_elementsLock);
+            Monitor.Pulse(_elementsLock);
         }
     }
 
