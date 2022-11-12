@@ -35,7 +35,7 @@ public class ConcurrentPriorityQueue<TP, TV> : IConcurrentPriorityQueue<TP, TV> 
             if (_elementsCount == 0) Monitor.Wait(_elementsLock);
 
             var maxPriority = _elementsByPriority.Keys.Last();
-            var element = _elementsByPriority[maxPriority].Pop();
+            var element = _elementsByPriority[maxPriority].Unshift();
             if (_elementsByPriority[maxPriority].Count == 0)
             {
                 _elementsByPriority.Remove(maxPriority);
