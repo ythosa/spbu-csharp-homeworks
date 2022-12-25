@@ -1,0 +1,35 @@
+@page
+@model GradesAudit.Pages.Rate
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Rate</title>
+    <style>
+        .validation-error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<form method="post">
+    <p>
+        <label asp-for="AuditRecord.StudentName">Student name:</label>
+        <input asp-for="AuditRecord.StudentName"/>
+        <span asp-validation-for="AuditRecord.StudentName" class="validation-error"></span>
+    </p>
+    <p>
+        <label asp-for="AuditRecord.Subject">Subject:</label>
+        <input asp-for="AuditRecord.Subject"/>
+        <span asp-validation-for="AuditRecord.Subject" class="validation-error"></span>
+    </p>
+    <p>
+        <label asp-for="AuditRecord.Assessment">Assessment:</label>
+        <input asp-for="AuditRecord.Assessment"/>
+        <span asp-validation-for="AuditRecord.Assessment" class="validation-error"></span>
+    </p>
+    <button type="submit">Record!</button>
+</form>
+</body>
+</html>
