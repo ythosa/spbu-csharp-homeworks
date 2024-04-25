@@ -1,0 +1,31 @@
+@page
+@using GradesAudit.Models
+@model GradesAudit.Pages.Audit
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Audit</title>
+</head>
+<body>
+<h2>List of rates:</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Student Name</th>
+        <th>Subject</th>
+        <th>Assessment</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (AuditRecord p in Model.AuditRecords) {
+        <tr>
+            <td>@p.StudentName</td>
+            <td>@p.Subject</td>
+            <td>@(p.Assessment)</td>
+        </tr>
+    }
+    </tbody>
+</table>
+</body>
+</html>
