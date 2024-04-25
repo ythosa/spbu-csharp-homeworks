@@ -16,5 +16,5 @@ public class AuditRecord
 
     [Required(ErrorMessage = "Please enter assessment")]
     [Range(2, 5, ErrorMessage = "Assessment must be from 2 to 5")]
-    public uint Assessment { get; set; }
+    public uint? Assessment { get; set; }
 }
